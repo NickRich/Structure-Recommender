@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int numberOfStructures = 8;
+        int numberOfStructures = 9;
         WordSearch ws = new WordSearch();
 
         System.out.println("Please Enter Description of Project: ");
@@ -27,6 +27,7 @@ public class Main {
         dataStructures[5] = "Stack";
         dataStructures[6] = "Queue";
         dataStructures[7] = "Linked List";
+        dataStructures[8] = "Array/Matrix";
 
 
 
@@ -51,9 +52,6 @@ public class Main {
                 }
             }
         }
-        for (int i = 0 ; i < dataStructureCount.length; i++) {
-            System.out.println(dataStructureCount[i]);
-        }
 
         DataStructureInfo DSI = new DataStructureInfo();
         if (dataStructureCount[dataStructureCount.length - 1] != 0) {
@@ -74,27 +72,6 @@ public class Main {
         } else {
             System.out.println("Not enough info");
         }
-
-//        if (firstRecommended != -1) {
-//            System.out.println(dataStructures[firstRecommended]);
-//            DSI.getInfo(dataStructures[firstRecommended]);
-//        } else {
-//            System.out.println("Not enough info");
-//        }
-//
-//        if (secondRecommended != -1) {
-//            System.out.println(dataStructures[secondRecommended]);
-//            DSI.getInfo(dataStructures[secondRecommended]);
-//        } else {
-//            System.out.println("Not enough info");
-//        }
-//
-//        if (secondRecommended != -1) {
-//            System.out.println(dataStructures[thirdRecommended]);
-//            DSI.getInfo(dataStructures[thirdRecommended]);
-//        } else {
-//            System.out.println("Not enough info");
-//        }
     }
 
 }

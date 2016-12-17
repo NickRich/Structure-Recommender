@@ -12,6 +12,7 @@ public class DataStructureInfo {
             case "Stack": break;
             case "Queue": break;
             case "Linked List": break;
+            case "Array/Matrix": break;
         }
     }
 }

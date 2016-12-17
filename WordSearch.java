@@ -13,6 +13,7 @@ public class WordSearch {
             case 5: return stackWords();
             case 6: return queueWords();
             case 7: return listWords();
+            case 8: return arrayWords();
             default: return -1;
         }
 
@@ -142,6 +143,34 @@ public class WordSearch {
             count++;
         }
         if (trie.search("insert")) {
+            count++;
+        }
+        if (trie.search("singly")) {
+            count++;
+        }
+        if (trie.search("doubly")) {
+            count++;
+        }
+        if (trie.search("head")) {
+            count++;
+        }
+        if (trie.search("tail")) {
+            count++;
+        }
+        return count;
+    }
+    private int arrayWords() {
+        int count = 0;
+        if (trie.search("array")) {
+            count++;
+        }
+        if (trie.search("matrix")) {
+            count++;
+        }
+        if (trie.search("1D")) {
+            count++;
+        }
+        if (trie.search("2D")) {
             count++;
         }
         return count;
